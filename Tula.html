@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TULA</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(
+      rgba(0, 0, 0, 0.5),  /* dark overlay */
+      rgba(0, 0, 0, 0.5)
+      ), url('collage.jpg') center/cover no-repeat;
+      color: #3e2f2a;
+    }
+
+    /* Navigation button container */
+    .nav-link-container {
+      text-align: center;
+      margin: 20px;
+    }
+
+    /* Navigation button styling */
+    .nav-link {
+      background-color: #a97c50; /* lighter brown */
+      color: white;
+      padding: 10px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: 'Roboto', sans-serif;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+    .nav-link:hover {
+      background-color: #8e6843; /* slightly darker on hover */
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      text-align: center;
+      color: #fff8f0; /* softer, brighter cream */
+      margin-bottom: 30px;
+      font-size: 4.5rem;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    .saknong {
+      background-color: rgba(255, 248, 240, 0.85);
+      border-radius: 10px;
+      padding: 20px 30px;
+      margin: 20px auto;
+      max-width: 700px;
+      box-shadow: 0 4px 10px rgba(90, 62, 54, 0.2);
+      border: 1px solid rgba(90, 62, 54, 0.2);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+    }
+
+    .saknong:nth-child(6) {
+      animation-delay: 0.3s;
+    }
+    .saknong:nth-child(7) {
+      animation-delay: 0.6s;
+    }
+    .saknong:nth-child(8) {
+      animation-delay: 0.9s;
+    }
+    .saknong:nth-child(9) {
+      animation-delay: 1.2s;
+    }
+    .saknong:nth-child(10) {
+      animation-delay: 1.5s;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin: 12px 0;
+      text-align: center;
+      font-weight: normal;
+      color: #3b2d29;
+    }
+
+    .dedication {
+      color: white;
+      font-size: 0.9rem;
+      font-style: italic;
+      text-align: center;
+      margin: 0 auto 4px auto;
+      max-width: 700px;
+      font-weight: normal;
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      font-style: italic;
+      font-weight: normal;
+      color: white !important;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      background-color: transparent;
+    }
+
+    footer p,
+    footer p em {
+      color: white !important;
+      font-style: italic;
+      font-weight: normal;
+    }
+
+    .portrait {
+      display: block;
+      margin: 0 auto 30px auto;
+      max-width: 300px;
+      border-radius: 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .audio-player {
+      display: block;
+      margin: 0 auto 50px auto;
+      width: 90%;
+      max-width: 300px;
+      outline: none;
+      filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nav-link-container">
+    <a href="Home.html" class="nav-link">← Home</a>
+  </div>
+
+  <h1>Ang Huling Biro ni Papa</h1>
+
+  <!-- Picture ninyo ni Papa -->
+  <img src="meandpapa.jpg" alt="Larawan namin ni Papa" class="portrait" />
+
+  <p class="dedication">(Isang awit na alay ko kay Papa)</p>
+
+  <!-- Audio player ng kanta -->
+  <audio class="audio-player" controls>
+    <source src="If.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="saknong">
+    <p>"'Wag kayong mag-alala," sabi ni Papa,</p>
+    <p>Ngunit may panginginig sa kanyang mata.</p>
+    <p>Biniro pa kami upang magpasaya—</p>
+    <p>Hindi namin alam, na iyon na pala.</p>
+  </div>
+
+  <div class="saknong">
+    <p>Kasa-kasama ko siya noong bata,</p>
+    <p>Sa bawat galaw ko’y siya’y gumagabay.</p>
+    <p>Kahit na anong gawin, may alam siya—</p>
+    <p>Mundo’y kayang buuin gamit ang lata.</p>
+  </div>
+
+  <div class="saknong">
+    <p>Sa burol ay tawa ang unang bumungad,</p>
+    <p>“Si Papa, ang saya,” sigaw ng pamilya.</p>
+    <p>Ngunit ang puso ko'y tila'y napigtal na</p>
+    <p>Ng halakhak niyang ngayo’y wala na.</p>
+  </div>
+
+  <div class="saknong">
+    <p>Sa aking pag-uwi, gabi’y tahimik na,</p>
+    <p>Naalalang gabi ng kaniyang dusa.</p>
+    <p>Ako’y hindi sumama, puso’y may hiya—</p>
+    <p>Pagdating ng umaga, siya’y nawala.</p>
+  </div>
+
+  <div class="saknong">
+    <p>Ngayo’y sa alaala’y nagpapailaw,</p>
+    <p>Sa puso ko’y iniingatan bawat araw.</p>
+    <p>Biro mo’y gabay sa dilim ng pag-asa,</p>
+    <p>Papa, ikaw ang ilaw sa bawat saya.</p>
+  </div>
+
+  <footer>
+    <p><em>Isinulat bilang alaalay kay Victorino Gosioco, "Papa" — 2025</em></p>
+  </footer>
+
+</body>
+</html>
